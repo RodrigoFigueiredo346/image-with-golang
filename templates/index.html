@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNMP Frontend</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #3498db 0%, #267bb6 50%, #1f619a 100%);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            color: #fff;
+            margin: 0;
+        }
+
+        footer {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            background-color: #267bb6;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #1f619a;
+        }
+
+        #output {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #slider-container {
+            margin-top: 20px;
+            width: 50%;
+        }
+
+        #slider {
+            width: 100%;
+        }
+
+        #slider-value {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SNMP - PAINEL</h1>
+    </header>
+
+    <div class="content">
+        <div id="slider-container">
+            <input type="range" id="slider" min="0" max="100" value="50">
+            <p id="slider-value">50</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Imply Tecnologia do Brasil</p>
+        <p>Endereço: Rodovia 247, 1111, Santa Cruz do Sul</p>
+    </footer>
+
+    <script>
+        const slider = document.getElementById('slider');
+        const sliderValue = document.getElementById('slider-value');
+
+        slider.addEventListener('input', () => {
+            const value = slider.value;
+            sliderValue.textContent = value;
+        });        
+    </script>
+</body>
+
+</html>
