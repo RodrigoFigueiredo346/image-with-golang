@@ -24,7 +24,7 @@ func main() {
 	//res := examples.SumDigits2()
 	// res := examples.MaxProfit([]int{2, 4, 1})
 
-	examples.TestSnmp2()
+	examples.CreateJSON()
 
 	//fmt.Println(res)
 

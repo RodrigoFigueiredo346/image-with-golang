@@ -9,7 +9,7 @@ import (
 )
 
 const path = "/var/data/output.json"
-const imagePath = "/var/data/image.png"
+const imagePath = "/var/data/image.jpg"
 
 // JSONData representa a estrutura dos dados JSON
 type JSONData struct {
@@ -23,7 +23,7 @@ type JSONData struct {
 	ID    int         `json:"id"`
 }
 
-func TestSnmp2() {
+func CreateJSON() {
 
 	generateAndSaveFile()
 
