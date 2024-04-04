@@ -1,4 +1,4 @@
-package examples
+package exercises
 
 import (
 	"strings"

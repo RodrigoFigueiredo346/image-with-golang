@@ -1,13 +1,8 @@
-package examples
+package utils
 
 import "fmt"
 
-func Goroutines2() {
-
-	chanWithSelect2()
-}
-
-func chanWithSelect2() {
+func RuneType() {
 	code := 19991
 	char := rune(code)
 	s := []rune{'A', '世'}

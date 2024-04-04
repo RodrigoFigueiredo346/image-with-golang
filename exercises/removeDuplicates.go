@@ -1,4 +1,4 @@
-package examples
+package exercises
 
 func RemoveDuplicates(nums []int) int {
 	if len(nums) == 0 {
